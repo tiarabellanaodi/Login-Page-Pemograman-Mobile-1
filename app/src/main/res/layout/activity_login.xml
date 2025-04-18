@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/primaryColor"
+        android:id="@+id/login"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:text="Selamat Datang!"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logintxt1"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logintxt1"
+        android:text="Silahkan isi kolom dibawah ini"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logintxt2"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:layout_below="@id/logintxt2"
+        android:id="@+id/form1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/containerColor"
+            android:paddingLeft="20dp"
+            android:hint="Masukan Email"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/containerColor"
+            android:paddingLeft="20dp"
+            android:hint="Masukan Password"
+            android:layout_marginVertical="10dp"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/form1"
+        android:width="300dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:layout_marginVertical="30dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="15sp"
+        android:id="@+id/btn_login"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_login"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun? "
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textSize="15sp"
+            android:textColor="@color/secondaryColor"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/txtDaftar"
+         />
+    </LinearLayout>
+
+</RelativeLayout>
